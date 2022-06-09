@@ -14,15 +14,15 @@ const fetchBreedDescription = (breedName, callback) => {
     }
 
     const dataJSON = JSON.parse(body);
-    const breed = dataJSON[0]
+    const breed = dataJSON[0];
 
     if (breed) {
-      callback(null, breed.description)
+      callback(null, breed.description);
     } else {
-      callback("breed not found")
+      callback("breed not found");
     }
   });
-}
+};
 
 
-module.exports = fetchBreedDescription
+module.exports = fetchBreedDescription;
